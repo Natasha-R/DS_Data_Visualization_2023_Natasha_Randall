@@ -1,6 +1,6 @@
 # Data Visualisation: Digital Sciences SS23 Final Project
 
-This repository contains the final project of the course "Data Visualisation" (https://digital-sciences.de/en/modules/data-visualization/) for the Digital Sciences Master's Degree at TH Köln.
+This repository contains the final project of the course ["Data Visualisation"](https://digital-sciences.de/en/modules/data-visualization/) for the Digital Sciences Master's Degree at TH Köln.
 
 ## Project Description
 
@@ -11,19 +11,18 @@ The purpose of this project is to investigate the differences between AI- and hu
 ### Code
 
 Processing the data:  
-1. Download Student Code Solutions.ipynb
-2. Process the Code Solutions.ipynb
-3. Extract the Features.ipynb
+1. [Download Student Code Solutions.ipynb](1.%20Download%20Student%20Code%20Solutions.ipynb)
+2. [Process the Code Solutions.ipynb](2.%20Process%20the%20Code%20Solutions.ipynb)
+3. [Extract the Features.ipynb](3.%20Extract%20the%20Features.ipynb)
 
-Creating the plots:
-<ol start="4">
-  <li>Test Passing Plots.ipynb</li>
-  <li>Single Feature Distribution Plots.ipynb</li>
-  <li>Two Features Distribution Plots.ipynb</li>
-  <li>Test Passing and Feature Interaction Plots.ipynb</li>
-</ol>
+Creating the plots:  
+&nbsp;&nbsp;&nbsp;&nbsp;4. [Test Passing Plots.ipynb](4.%20Test%20Passing%20Plots.ipynb)  
+&nbsp;&nbsp;&nbsp;&nbsp;5. [Single Feature Distribution Plots.ipynb](5.%20Single%20Feature%20Distribution%20Plots.ipynb)  
+&nbsp;&nbsp;&nbsp;&nbsp;6. [Two Features Distribution Plots.ipynb](6.%20Two%20Features%20Distribution%20Plots.ipynb)  
+&nbsp;&nbsp;&nbsp;&nbsp;7. [Test Passing and Feature Interaction Plots.ipynb](7.%20Test%20Passing%20and%20Feature%20Interaction%20Plots.ipynb)  
 
-The interactive scatterplot created in Bokeh is also released as a Python module (two_features_distribution_plot.py) so that each step can be executed individually:
+
+The interactive scatterplot created in Bokeh is also released as a Python module ([two_features_distribution_plot.py](two_features_distribution_plot.py)) so that each step can be executed individually:
 ```
 import two_features_distribution_plot as tf_dp
 data = tf_dp.format_data("processed_code_solutions/features_data.csv")
@@ -33,9 +32,12 @@ tf_dp.create_plot(data, all_meshes, all_accuracy, sorted_features)
 ```
 ### Data
 
-The raw unprocessed code solutions are stored in the folder: raw_code_solutions  
-The processed feature data are stored in the folder: processed_code_solutions  
+The raw unprocessed code solutions are stored in the folder: [raw_code_solutions](raw_code_solutions)  
+The processed feature data are stored in the folder: [processed_code_solutions](processed_code_solutions)  
+
+Due the all_meshes.csv dataset being too large to upload to Github, this dataset must be generated using the code in either [Two Features Distribution Plots.ipynb](6.%20Two%20Features%20Distribution%20Plots.ipynb) or [two_features_distribution_plot.py](two_features_distribution_plot.py).
 
 ### Visualisations
 
-All of the visualisations (stored as lossless PNG files at 300dpi) can be found in the following folder: plots
+The visualisations (stored as lossless PNG files at 300dpi) can be found in the following folder: [plots](plots).  
+The visualisations made specifically for the associated report are stored in the folder: [plots_report](plots_report).  
